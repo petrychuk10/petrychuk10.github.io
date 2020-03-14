@@ -1,6 +1,7 @@
 html{
     box-sizing: border-box;
     width: 1200px;
+    font-family: 'Roboto', sans-serif;
 }
 
 *,
@@ -9,29 +10,40 @@ html{
     box-sizing: inherit;
 }
 
-.container{
-    width:900px ;
-    margin: 0 auto;
+.container {
+ width:900px;
+ margin: 0 auto; 
+ color: rgb(109,109,109)
+}
+
+.container h2{
+    color:rgb(98,98,98);
+}
+
+.container p{
+    color: rgb(109,109,109);
+}
+
+.page-menu {
+    margin-left: 166px;
+    margin-right: 166px;
 }
 
 .menu li{
     display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
-.menu li:not(:last-child){
-    margin-right: 60px;
-}
+
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
+    margin-bottom: 32px;
 }
 
-.page menu{
-    padding: 40px 0;
-    vertical-align: middle;
-}
 
 .info-item{
     width: 420px;
@@ -39,54 +51,108 @@ img {
     padding: 0;
     display: inline-block;
     margin-right: 56px;
-    text-align: center;
     margin-bottom:136px ;
+}
+
+.info p{
+    margin: 0;
+    margin-bottom:32px ;
+}
+
+.info h2{
+    margin: 0;
+    margin-bottom:46px;  
+    font-size: 30px;
 }
 
 .info{
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 14px;
     }
 
 .info-item:nth-child(2n){
     margin-right: 0;
 }
 
-.info-item:nth-last-child(-n+3){
+.info-item:nth-last-child(-n+2){
     margin-bottom: 0;
 }
+
 .menu {
-    margin-bottom: 102px;
-    margin-left: 168px;
+    font-size: 14px;
+    margin:auto 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
 }
+
+.menu:hover li{
+    opacity: 0.6;
+}
+
 
 footer{
     width:900px ;
     margin: 0 auto;
 }
 
-.footer1{
-    box-sizing: border-box;
+.lower-button{
+  box-sizing: border-box;
   width: 164px;
   height: 59px;
   margin-top: 90px;
   margin-right:380px ;
   margin-left: 359px;
   margin-bottom: 22px;
-  
-}
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  border-color: rgb(109,109,109);
+  color:  rgb(109,109,109);
+  }
 
 header{
-    width: 900px;
-    margin: 0 auto;
-    margin-top: 78px;
-}
-p {
-    font-size: 14;
+    padding-top: 70px;
+    bottom: 104px;
 }
 
-a{
-    font-size: 14;
+p {
+    font-size: 14px;
+}
+
+
+a { 
+ text-decoration: none;
+ color: rgb(109,109,109);
+ font-size: 14px;
+ text-transform: uppercase;
+}
+
+.page-menu {
+    padding-bottom: 106px ;
+}
+
+.img-name{
     text-transform: uppercase;
+    color: rgb(109,109,109);
+    margin-top: 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.lower-button:hover{
+    font-size: 30px;
+}
+
+.lifestyle{
+    margin-right: 118px;
+}
+
+.photodiary{
+    margin-right: 102px;
+}
+
+.music{
+    margin-right: 92px;
 }
