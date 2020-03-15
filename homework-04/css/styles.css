@@ -87,8 +87,8 @@ img {
     }
 
 .info-item{
-        margin-right: 56px;
-        padding-bottom: 132px ;
+    margin-right: 56px;
+    padding-bottom: 132px ;
     }
 
 .info-item:nth-child(2n){
@@ -172,6 +172,6 @@ h2:hover:after {
 	width: 50%;
 }
 
-.photo:hover{
-    -webkit-filter:opacity(50%);
+li:hover .info-text{
+    background-color: rgb(95, 25, 25);
 }
