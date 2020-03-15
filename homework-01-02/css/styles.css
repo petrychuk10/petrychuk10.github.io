@@ -21,27 +21,25 @@ header{
 .menu{
     margin:auto 0;
     padding: 0;
-    box-sizing: border-box;
     width: 100%;
     font-size: 0;
-    text-align: center;
+    list-style: none;
 }
 
 .menu-item {
  margin-right: 96px;
- display: inline-block;
+ float: left;
  font-family: 'Playfair Display', serif;
  font-size: 14px;
  text-transform: uppercase;
 }
 
 
-.menu li:last-child{
-    margin-right: 0;
+.menu li:first-child{
+    margin-left: 162px;
 }
 
 .menu a{
-    display: block;
     text-decoration: none;
     color: rgb(109,109,109);
     font-size: 14px;
@@ -61,19 +59,15 @@ header{
 }
 
 img {
-    display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 32px;
 }
 
 .info-item{
     width: 420px;
     margin: 0;
     padding: 0;
-    display: inline-block;
-    margin-right: 56px;
-    margin-bottom:136px ;
+    float: left;
 }
 
 
@@ -89,15 +83,20 @@ img {
     margin: 0;
     padding: 0;
     font-size: 0;
-    margin-bottom: 90px;
+    padding-bottom: 92px;
+    }
+
+.info-item{
+        margin-right: 56px;
+        padding-bottom: 132px ;
     }
 
 .info-item:nth-child(2n){
     margin-right: 0;
 }
 
-.info-item:nth-last-child(-n+2){
-    margin-bottom: 0;
+.info-item:nth-child(n+2){
+    padding-bottom: 0;
 }
 
 
@@ -117,7 +116,7 @@ footer{
   color:  rgb(109,109,109);
   }
 
-  section {
+section {
       padding-bottom: 22px;  
   }
 
@@ -147,4 +146,32 @@ p {
 .lower-button:hover{
     font-size: 24px;
 }
-       
+.lower-button:focus{
+    background-color: #21e7e7;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2::after{
+    display: block;
+	position: left;
+	left: 1; 
+	width: 0;
+	height: 2px; 
+	background-color: rgb(109,109,109);
+	content: "";
+    transition: 1s ease-out;
+}
+
+h2:hover:after {
+	width: 50%;
+}
+
+.photo:hover{
+    -webkit-filter:opacity(50%);
+}
+
