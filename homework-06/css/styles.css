@@ -28,6 +28,11 @@ a {
 
 a:hover {
     cursor: pointer;
+    color: rgb(243, 129, 129);
+}
+
+a:focus{
+    color: rgb(243, 129, 129);
 }
 
 ul {
