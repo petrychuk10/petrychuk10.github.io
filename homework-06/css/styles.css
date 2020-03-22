@@ -19,6 +19,7 @@ html{
 .container {
     width: 1200px;
     font-size: 0;
+    margin: 0 auto;
 }
 
 a {
@@ -283,60 +284,40 @@ transform: translateX(-10px) translateY(-10px);
     opacity: 1;
 }
 
-.social_media_list_item:hover{
+.social_media_list_item .social_media_list_icon{
+    width: 50px;
+    height: 50px;
+    color: #f38181;
+    background-color: rgb(252, 227, 138);
+    margin-right: 1px;
+}
+
+.social_media_list_icon:hover {
     background-color: rgb(149, 225, 211);
 }
 
-.social_media_list_item{
+.social_media_list_icon{
     width: 50px;
     height: 50px;
-    background-color: rgb(252, 227, 138);
-    margin-right: 1px;
-    color: #f38181;
+    display: block;
 }
 
-.social_media_list_item:last-child{
-    margin-right: 0;
-}
-
-.social_media_list_fb{
+.fb{
     background: url(../img/sm_icons/facebook.png) no-repeat center;
-    width: 50px;
-    height: 50px;
-    position: absolute;
 }
 
-.social_media_list_twitter{
+.twitter{
     background: url(../img/sm_icons/twitter.png) no-repeat center;
-    width: 50px;
-    height:50px;
-    position: absolute;
 }
 
-.social_media_list_pinterest{
+.pinterest{
     background: url(../img/sm_icons/pinterest.png) no-repeat center;
-    width: 50px;
-    height: 50px;
-    position: absolute;
 }
 
-.social_media_list_insta{
+.insta{
     background: url(../img/sm_icons/instagram.png) no-repeat center;
-    width: 50px;
-    height: 50px;
-    position: absolute;
 }
 
-.Rectangle_16 {
-    background-color: rgb(243, 129, 129);
-    position: absolute;
-    left: 428px;
-    top: 1177px;
-    width: 56px;
-    height: 56px;
-    z-index: 23;
-  }
-  
 .meet_our_team_group_list_name{
     font-size: 14px;
     font-weight: 500;
@@ -405,6 +386,14 @@ margin-bottom: 10px;
     width: 230px;
     height: 40px;
     border: 1px solid rgb(229, 229, 229);
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+    padding-left: 12px;
+    
 }
 
 .footer_copyright a{
