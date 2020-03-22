@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>homework-04</title>
+  <title>homework-05</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
@@ -40,74 +40,95 @@
      <section class="slider_menu">
       <div class="bg_slider"><img src="./img/bg_image.jpg" width="1600" height="600" alt="girls" class="bg_slider_img">
       </div>
-      <div class="slider_text container">
+      <div class="slider_text container clearfix">
            <h2 class="slider-title">AFFORDABLE PARIS TOURS</h2>
            <p class="slider_info">CITY TOURS/TOUR TICKET/Tour GUIDES</p>
-      </div>
-      <div class="button_slider container">
-        <button class="prev"><img src="./img/pic/arrow-left.PNG" width="104" height="104" alt="arrow-left" class="arrow-left"></button>
-        <button class="next"><img src="./img/pic/arrow-right.PNG" width="104" height="104" alt="arrow-right"></button>
+          <div class="slider_btns">
+            <button class="prev" disabled></button>
+            <button class="next"></button>
+          </div>
       </div>
      </section>
-
-
     <section class="featured_products"> 
       <div class="container clearfix">
        <h2 class="new_collection_name">new collection</h2>
       </div>
-      <div class="collection_items container">
-       <ul class="new_collection_list clearfix">
-        <li class="new_collection_list_item clearfix">
-         <img src="./img/products/model-1.png" alt="blue tshirt" width="254" height="282" class="new_collection_pic">
-         <a href="#" class="new_collection_link"><h3 class="new_collection">blue tshirt</h3><p class="price">$26</p></a>
-        <div class="list_item_overlay">
-          <ul class="buttons_new_collection">
-           <li class="button_list"><button class="btn heart"><img src="./img/pic/heart.png" alt="heart"></button></li>
-           <li class="button_list"><button class="btn arrows"><img src="./img/pic/arrows.png" alt="heart"></button></li>
-           <li class="button_list"><button class="btn timer"><img src="./img/pic/timer.png" alt="heart"></button></li>
-           <li class="button_list"><button class="btn add_to_cart"><img src="./img/pic/cart.png" alt="heart" class="cart_img"><span class="btn_cart_text">add to cart</span></button></li>
-           </ul>
-        </div>
-        </li> 
-        <li class="new_collection_list_item clearfix">
-         <img src="./img/products/model-2.png" alt="golden dress" width="254" height="282" class="new_collection_pic">
-         <a href="#" class="new_collection_link"><h3 class="new_collection">woman shirt</h3><span class="price">$31</span></a>
-         <div class="list_item_overlay">
-          <ul class="buttons_new_collection">
-            <li class="button_list"><button class="btn heart"><img src="./img/pic/heart.png" alt="heart"></button></li>
-            <li class="button_list"><button class="btn arrows"><img src="./img/pic/arrows.png" alt="heart"></button></li>
-            <li class="button_list"><button class="btn timer"><img src="./img/pic/timer.png" alt="heart"></button></li>
-            <li class="button_list"><button class="btn add_to_cart"><img src="./img/pic/cart.png" alt="heart" class="cart_img"><span class="btn_cart_text">add to cart</span></button></li>
-           </ul>
-        </div>
-        </li> 
-        <li class="new_collection_list_item clearfix">
-         <img src="./img/products/model-3.png" alt="yellow tshirt" width="254" height="282" class="new_collection_pic">
-         <a href="#" class="new_collection_link"><h3 class="new_collection">yellow shirt</h3><p class="price">$21</p></a>
-         <div class="list_item_overlay">
-          <ul class="buttons_new_collection">
-            <li class="button_list"><button class="btn heart"><img src="./img/pic/heart.png" alt="heart"></button></li>
-            <li class="button_list"><button class="btn arrows"><img src="./img/pic/arrows.png" alt="heart"></button></li>
-            <li class="button_list"><button class="btn timer"><img src="./img/pic/timer.png" alt="heart"></button></li>
-            <li class="button_list"><button class="btn add_to_cart"><img src="./img/pic/cart.png" alt="heart" class="cart_img"><span class="btn_cart_text">add to cart</span></button></li>
-           </ul>
-        </div>
-        </li> 
-        <li class="new_collection_list_item clearfix">
-         <img src="./img/products/model-4.png" alt="light dress" width="254" height="282" class="new_collection_pic">
-         <a href="#" class="new_collection_link"><h3 class="new_collection">cool lingerie</h3><p class="price">$56</p></a>
-         <div class="list_item_overlay">
-          <ul class="buttons_new_collection">
-            <li class="button_list"><button class="btn heart"><img src="./img/pic/heart.png" alt="heart"></button></li>
-            <li class="button_list"><button class="btn arrows"><img src="./img/pic/arrows.png" alt="heart"></button></li>
-            <li class="button_list"><button class="btn timer"><img src="./img/pic/timer.png" alt="heart"></button></li>
-            <li class="button_list"><button class="btn add_to_cart"><img src="./img/pic/cart.png" alt="heart" class="cart_img"><span class="btn_cart_text">add to cart</span></button></li>
-           </ul>
-        </div>
-        </li> 
-       </ul>
+      <div class="new_collection_info container">
+        <ul class="new_collection_list">
+          <li class="new_collection_list_item">
+            <div class="new_collection_list_item_photo_submenu">
+              <img src="./img/products/model-1.png" alt="model1" width="254" height="284">
+              <div class="new_collection_list_submenu">
+                <ul class="new_collection_submenu_list">
+                  <li class="new_collection_submenu_item"><button class="like"></button></li>
+                  <li class="new_collection_submenu_item"><button class="shuffle"></button></li>
+                  <li class="new_collection_submenu_item"><button class="timer"></button></li>
+                  <li class="new_collection_submenu_item cart"><button class="cart_add">ADD TO CART</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="new_collection_product">
+              <a href="#"><p class="new_collection_product_name">tshirt<span class="new_collection_product_price">26$</span></p></a>
+            </div>
+          </li>
+          <li class="new_collection_list_item">
+            <div class="new_collection_list_item_photo_submenu">
+              <img src="./img/products/model-2.png" alt="model2" width="254" height="284">
+              <div class="new_collection_list_submenu">
+                <ul class="new_collection_submenu_list">
+                  <li class="new_collection_submenu_item"><button class="like"></button></li>
+                  <li class="new_collection_submenu_item"><button class="shuffle"></button></li>
+                  <li class="new_collection_submenu_item"><button class="timer"></button></li>
+                  <li class="new_collection_submenu_item cart"><button class="cart_add">ADD TO CART</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="new_collection_product">
+              <a href="#"><p class="new_collection_product_name">woman shirt<span class="new_collection_product_price">31$</span></p></a>
+            </div>
+          </li>
+          <li class="new_collection_list_item">
+            <div class="new_collection_list_item_photo_submenu">
+              <img src="./img/products/model-3.png" alt="model3" width="254" height="284">
+              <div class="new_collection_list_submenu">
+                <ul class="new_collection_submenu_list">
+                  <li class="new_collection_submenu_item"><button class="like"></button></li>
+                  <li class="new_collection_submenu_item"><button class="shuffle"></button></li>
+                  <li class="new_collection_submenu_item"><button class="timer"></button></li>
+                  <li class="new_collection_submenu_item cart"><button class="cart_add">ADD TO CART</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="new_collection_product">
+              <a href="#"><p class="new_collection_product_name">yellow tshirt<span class="new_collection_product_price">21$</span></p></a>
+            </div>
+          </li>
+          <li class="new_collection_list_item">
+            <div class="new_collection_list_item_photo_submenu">
+              <img src="./img/products/model-4.png" alt="model4" width="254" height="284">
+              <div class="new_collection_list_submenu">
+                <ul class="new_collection_submenu_list">
+                  <li class="new_collection_submenu_item"><button class="submenu_btn like"></button></li>
+                  <li class="new_collection_submenu_item"><button class="submenu_btn shuffle"></button></li>
+                  <li class="new_collection_submenu_item"><button class="submenu_btn timer"></button></li>
+                  <li class="new_collection_submenu_item cart"><button class="submenu_btn cart_add">ADD TO CART</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="new_collection_product">
+              <a href="#"><p class="new_collection_product_name">cool lingerie<span class="new_collection_product_price">51$</span></p></a>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
    </main>
+   <footer >
+     <div class="footer_info container">
+      <div class="footer_text">
+        <p>Rights Reserved © Dokan | Designed <a href="#">ThemenGraph</a></p>
+      </div>
+    </div>
+  </footer>
  </body>
 </html>                 
