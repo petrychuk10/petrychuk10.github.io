@@ -49,7 +49,7 @@ button {
     justify-content: space-between;
     align-items: baseline;
     padding-bottom: 122px;
-    margin-top: 34px;
+    padding-top: 34px;
 }
 
 .header_nav_list {
@@ -215,6 +215,7 @@ button {
     line-height: 1.2;
     text-align: left;
     margin-bottom: 8px;
+    padding-left: 80px;
 }
 
 .amazing_services_group_list_text {
@@ -399,3 +400,5 @@ margin-bottom: 10px;
 .footer_copyright a{
 color: rgb(243, 129, 129);
 }
+
+  
