@@ -51,10 +51,10 @@ margin: 0 auto;
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     src: local('Montserrat Black'), local('Montserrat-Black'),
-         url('../fonts/montserrat-v14-latin-900.woff2') format('woff2'),
-         url('../fonts/montserrat-v14-latin-900.woff') format('woff');
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff');
   }
 
 
@@ -87,7 +87,7 @@ margin: 0 auto;
 .header_nav_list{
     display: flex;
     justify-content: space-around;
-    font-family: 'Montserrat Regular', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 2.929;
     font-weight: 700;
@@ -97,6 +97,10 @@ margin: 0 auto;
 
 .header_nav_list_item{
     margin-left: 20px;
+}
+
+.header_nav_list_item:first-child{
+    margin-left: 0;
 }
 
 .header_nav_list_link:hover{
@@ -128,7 +132,7 @@ margin: 0 auto;
 }
 
 .services_group_title_main{
-font-size: 40px;
+    font-size: 40px;
     font-family: "Montserrat", sans-serif;
     color: rgb(34, 34, 34);
     font-weight: 700;
@@ -148,6 +152,10 @@ font-size: 40px;
 .services_group_info_list {
     display: flex;
     justify-content: space-between;
+}
+
+.services_group_info_list_item{
+    width: 324px;
 }
 
 .services_group_info_list_title{
@@ -200,26 +208,17 @@ font-size: 40px;
 }
 
 main{
-    margin-bottom: 104px;
+    padding-bottom: 104px;
 }
 
 footer{
-    width: 100%;
-    margin: 0 auto;
+    background: url(../pics/Background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .footer_box {
-    background: rgb(35, 35, 35);
-    height: 100%;
     position: relative;
-    padding-bottom: 116px;
-}
-
-.footer_box::before{
-    content: url(../pics/Map_Image.png);
-    position: absolute;
-    right: 0;
-    top: 0;
 }
 
 .contact_us_title{
@@ -256,7 +255,7 @@ footer{
     text-transform: uppercase;
     line-height: 1.2;
     position: relative;
-    margin-bottom: 30px;
+    padding-bottom: 116px;
 }
 
 .contact_us_forms_left_column{
@@ -302,8 +301,8 @@ textarea {
     height: 206px;
     resize: none;
     border-radius: 2px;
-    padding-left: 6px;
-    padding-top: 6px;
+    padding-left: 8px;
+    padding-top: 14px;
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(187, 187, 187);
@@ -329,12 +328,12 @@ textarea {
     transform: translateX(-50%) translateY(-50%);
 } 
 
-input:valid {
+input:valid:focus {
     border-color: rgb(168, 255, 38);
     Box-shadow:0px 0px 0px 2px rgb(168, 255, 38);
   }
 
-input:invalid {
+input:invalid:focus {
     border-color: red;
     Box-shadow:0px 0px 0px 2px #f00;
   }
