@@ -1,10 +1,12 @@
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 *::before,
 *::after {
-    margin: 0 auto;
+    margin: 0;
 }
 
 ul,ol {
@@ -27,6 +29,7 @@ img {
 
 .container {
     width: 320px;
+    margin: 0 auto;
 }
 
 button {
@@ -76,14 +79,14 @@ button:hover{
 
 .header_nav_list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 114px;
 }
 
 header{
     background: url(../img/banner_mobile.png) no-repeat;
-    background-size: 100%;
+    background-size:cover;
 }
 
 .header_nav_list_btns button{
@@ -160,7 +163,7 @@ header{
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    padding: 15px 54px;
+    padding: 15px 36px;
 }
 
 .partners_menu_title{
@@ -182,7 +185,12 @@ header{
     margin-bottom: 30px;
 }
 
+.partners_menu_list_items{
+        margin: 0 auto;
+}
+
 .partners_menu_list_item{
+
     margin-bottom: 28px;
 }
 
@@ -191,8 +199,11 @@ header{
 }
 
 .partners_menu_list_item_photo{
-    margin-bottom: 18px;
     position: relative;
+    border-radius: 50%;
+    width: 121px;
+    margin: 0 auto;
+     margin-bottom: 20px;
 }
 
 .partners_menu_list_item_name{
@@ -224,8 +235,7 @@ header{
    background-position: center;
    background-color: rgb(255, 78, 80);
    position: absolute;
-   left: 50%;
-   transform: translateX(60%);
+   right: 0;
    bottom: 0;
    width: 32px;
    height: 32px;
@@ -241,8 +251,7 @@ header{
     background-position: center;
     background-color: rgb(255, 165, 7);
     position: absolute;
-    left: 50%;
-    transform: translateX(60%);
+    right: 0;
     bottom: 0;
     width: 32px;
     height: 32px;
@@ -258,8 +267,7 @@ header{
     background-position: center;
     background-color: rgb(28, 215, 173);
     position: absolute;
-    left: 50%;
-    transform: translateX(60%);
+    right: 0;
     bottom: 0;
     width: 32px;
     height: 32px;
@@ -275,8 +283,7 @@ header{
     background-position: center;
     background-color: rgb(78, 115, 219);
     position: absolute;
-    left: 50%;
-    transform: translateX(60%);
+    right: 0;
     bottom: 0;
     width: 32px;
     height: 32px;
@@ -311,7 +318,7 @@ header{
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 808px){
     header{
         background: url(../img/banner_tablet.png) no-repeat;
         background-size: 100%;
@@ -319,6 +326,7 @@ header{
    
     .container {
         width: 748px;
+        margin: 0 auto;
     }
 
     .new_row_sub{
@@ -355,10 +363,15 @@ header{
     .partners_menu_list_item{
         width: 256px;
         margin: 0 auto;
+        margin-bottom: 58px;
+    }
+
+    .partners_menu_list_item:nth-child(2n+1){
+        margin-bottom: 0;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1002px) {
     header{
         background: url(../img/banner_desktop.png) no-repeat;
         background-size: 100%;
@@ -380,11 +393,12 @@ header{
     }
 
     .partners_menu{
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
 
     .partners_menu_list_items{
         display: flex;
+        justify-content: space-between;
     }
 
     .partners_menu_list_item{
