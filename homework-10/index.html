@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <title>homework-10</title>
 </head>
-<main>
+<body>
     <header class="header">
         <div class="container">
             <div class="header_nav">
@@ -52,7 +52,7 @@
             <a href="#" class="header_link">learn more</a>
             </div>
     </header>
-    <body>
+    <main>
         <div class="container">
         <h2 class="body_title">We work with<span class="body_title--sub">Amazing Services</span></h2>
         <div class="services">
@@ -89,7 +89,14 @@
             <ul class="team_list--items">
                 <li class="team_list--member">
                     <div class="team_list--card">
-                        <img srcset="./img/dix@1x.jpg 380w, ./img/dix@2x.jpg 760w" alt="dix" width="380" height="470" class="team_list--photo"> 
+                        <img 
+                        class="team_list--photo"
+                        srcset="./img/dix@1x.jpg 380w, ./img/dix@2x.jpg 760w" 
+                        sizes="380px"
+                        src="./img/dix@1x.jpg" 
+                        alt="dix"
+                        height="470" 
+                        > 
                     <div class="social_media">
                         <ul class="social_media_list">
                             <li class="social_media_list--item">
@@ -112,7 +119,14 @@
                 </li>
                 <li class="team_list--member">
                     <div class="team_list--card">
-                        <img srcset="./img/campbell@1x.jpg 380w, ./img/campbell@2x.jpg 760w" alt="dix" width="380" height="470" class="team_list--photo">
+                        <img 
+                        class="team_list--photo"
+                        srcset="./img/campbell@1x.jpg 380w, ./img/campbell@2x.jpg 760w" 
+                        sizes="380px"
+                        src="./img/campbell@1x.jpg" 
+                        alt="dix" 
+                        height="470" 
+                        >
                     <div class="social_media">
                         <ul class="social_media_list">
                             <li class="social_media_list--item">
@@ -135,7 +149,14 @@
                 </li>
                 <li class="team_list--member">
                     <div class="team_list--card">
-                        <img srcset="./img/fertig@1x.jpg 380w, ./img/fertig@2x.jpg 760w" alt="dix" width="380" height="470" class="team_list--photo">
+                        <img 
+                        class="team_list--photo"
+                        srcset="./img/fertig@1x.jpg 380w, ./img/fertig@2x.jpg 760w" 
+                        sizes="380px"
+                        src="./img/fertig@1x.jpg 380w"
+                        alt="dix" 
+                        height="470" 
+                        >
                         <div class="social_media">
                             <ul class="social_media_list">
                                 <li class="social_media_list--item">
@@ -159,7 +180,7 @@
             </ul>
         </div>
     </div>
-    </body>
+</main>
     <footer>
         <div class="footer_info container">
             <p class="footer_copyright"> &copy; 2016 MoGo free PSD template by <a href="#">Laaqiq</a></p>
@@ -169,5 +190,5 @@
             </form>
         </div>
     </footer>
-</main>
+</body>
 </html>
