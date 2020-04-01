@@ -88,6 +88,7 @@ ul {
 .header{
   background: url(../img/bg.png) no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .header_nav{
@@ -200,8 +201,6 @@ ul {
   border-color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0);
 }
-
-
 
 .body_title{
   font-family: 'Kaushan Script', cursive;
@@ -383,7 +382,7 @@ ul {
   opacity: 1;
 }
 
-.social_media_list_item .social_media_list_icon{
+.social_media_list--item .social_media_list--icon{
   width: 50px;
   height: 50px;
   color: #f38181;
@@ -391,11 +390,11 @@ ul {
   margin-right: 1px;
 }
 
-.social_media_list_icon:hover {
+.social_media_list--icon:hover {
   background-color: rgb(149, 225, 211);
 }
 
-.social_media_list_icon{
+.social_media_list--icon{
   width: 50px;
   height: 50px;
   display: block;
@@ -466,7 +465,7 @@ ul {
   padding-top: 12px;
 }
 
-.subscribe_form_btn{
+.subscribe_form--btn{
   border: none;
   background-color:rgb(149, 225, 211);
   font-weight: 500;
@@ -477,7 +476,7 @@ ul {
   height: 40px;
 }
 
-.subscribe_form_input{
+.subscribe_form--input{
   width: 230px;
   height: 40px;
   border: 1px solid rgb(229, 229, 229);
